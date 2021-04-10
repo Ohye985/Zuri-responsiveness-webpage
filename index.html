@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">M.O.J</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </ul>
+    </div>
+
+    <!-- Hero section -->
+
+    <div class="hero-section">
+        <div class="hero-content-heading">
+            <h3>Document your being</h3>
+            <p>Live a memorable life through reminiscing. We make your pictures worth a thousand daily smiles.</p>
+        </div>
+        <div class="hero-content-btn">
+            <a href="#">Learn More</a>
+        </div>
+    </div>
+
+    <!-- sub-hero section -->
+    <div class="hero-background">
+        <div class="background">
+            <h4>About Us</h4>
+            <p>M.O.J Pixels is a documentary photography outfit. We make stories out of the ordinary, be it a person, situation or an abstract. Discover something new every day — always with a camera in hand</p>
+        </div>
+        <div class="hero-background-pos"></div>
+    </div>
+    <div class="snapshot-team">
+        <h2>Our Team</h2>
+        <p>Meet the awesome people who makes the impossible possible</p>
+    </div>
+    <div class="snapshot-box">
+        <div class="snapshot-box-content">
+            <div class="box1">
+                    <div class="circle"><img src="Pictures/elizeu-dias-2EGNqazbAMk-unsplash.jpg" alt="M.O.J"></div>
+                    <h5>M.O.J, Manager</h5>
+            </div>
+            <div class="box1">
+                <div class="circle"><img src="Pictures/jeffery-erhunse-dBwrTc-2AD8-unsplash.jpg" alt="Linda"></div>
+                <h5>Linda, COO</h5>
+            </div>
+            <div class="box3">
+                <div class="circle"><img src="Pictures/nico-marks-763-mBawsfg-unsplash(1).jpg" alt="Jude"></div>
+                <h5>Jude, Photographer</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery section -->
+    <div class="gallery-section">
+        <div class="gallery-content">
+            <h4>Gallery</h4>
+            <p>Some of the moments we captured with our powerful lens</p>
+        </div>
+        <div class="gallery-img">
+            <div>
+                <div class="img">
+                    <img src="Pictures/lucas-gouvea-aoEwuEH7YAs-unsplash.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="Pictures/jeffery-erhunse-BQMZ5ligqps-unsplash.jpg" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="Pictures/jackson-david-BL_Q4zjduGU-unsplash.jpg" alt="">
+                </div>
+                <div class="img">
+                    <img src="Pictures/jurien-huggins-b_XgP4vM47E-unsplash.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        <div class="footer-content">
+            <h4>Send a message</h4>
+            <p>Kindly share your opinion on what we do.</p>
+        </div>
+        <div class="footer-input">
+            <input type="text" placeholder="Name"> 
+            <input type="email" placeholder="Email">
+        </div>
+        <div class="footer-textarea">
+            <textarea placeholder="Message"></textarea>
+        </div>
+        <div class="footer-btn">
+            <a href="#">Send Message</a>
+        </div>
+        <h6>Copyright &copy; 2021 Zuri Training.</h6>
+    </div>
+
+    <script>
+        function hamburger() {
+          var x = document.querySelector("ul");
+          if (x.className === "nav-links") {
+            x.className += " responsive";
+          } else {
+            x.className = "nav-links";
+          }
+        }
+        </script>
+</body>
+</html>
